@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment-2.2</title>
+		
+		<style>
+		
+		input[type=text], select {
+		  width: 100%;
+		  padding: 10px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+		
+		input[type=submit] {
+		  width: 100%;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+		
+		#form_wrapper {
+		                border-bottom-left-radius:15px; 
+		                border-bottom-right-radius:15px;
+		                max-width: 450px;
+		                height: 1000px;
+		                
+		                margin:auto; 
+		                background:#2C3E50;
+		                padding:15px;
+		                border-style:solid;
+		                border-color:#2C3E50;
+		            }
+		            
+		            
+		      
+		         h1,
+		            span {
+		            	
+		                text-align: center;
+		                
+		            }   
+		           h4,
+		            span {
+		                text-align: center;
+		                
+		            } 
+		               
+		        * {
+		                padding: 0;
+		                margin: 0;
+		                box-sizing: border-box;
+		            }
+		           
+		            .bg {
+		
+						 background:  url("https://blog.westmonroepartners.com/wp-content/uploads/2019/09/people-working-on-computer-675x372.jpg") no-repeat center center fixed; 
+						 background-blend-mode: lighten;
+						  -webkit-background-size: cover;
+						  -moz-background-size: cover;
+						  -o-background-size: cover;
+						  background-size: cover;
+						 
+					}
+		        body {
+		     			
+		  
+		                height: 5vh;
+		               
+		                font-family: 'Roboto',
+		                sans-serif;
+		                  
+		            }
+		           
+		            #wgtmsr{
+		                width:415px;   
+		            }
+		</style>
+	</head>
+	
+	<body>
+		<div class="bg">
+		<h1 >Vedic Survey form</h1>
+		<h4 >Thank you for taking time to help us improve the platform</h4>
+		<div id="form_wrapper"><br>
+		<div id="form_right">
+		                    
+		                    <div class="input_container">
+		                    
+		                   <label for="uname"><b>Name</b><br></label>
+		                        <input placeholder="Enter your name" type="text" name="name" id="name" class='input_field' size = "60">
+		                    </div>
+		                    
+		                    
+		                    <div class="input_container">
+		                    <label for="uname"><b>Email</b><br></label>
+		                        <input  placeholder="Enter your Email" type="text" name="Password" id="field_password" class='input_field' size = "60">
+		                    </div>
+		                    
+		                    
+		                    <div class="input_container">
+		                    <label for="Age"><b>Age(optional)</b><br></label>
+		                        <input  placeholder="Age" type="text" name="Password" id="field_password" class='input_field' size = "60">
+		                    </div><br>
+		            
+		            
+		                    <div class="input_container">
+		                    <label for="role"><b>Which option best describes your current role?</b><br></label>
+		                        <select id="wgtmsr" name="wgtmsr" >
+								  <option default>Select current role</option>
+								    <option value="volvo">Volvo</option>
+								    <option value="saab">Saab</option>
+								    <option value="fiat">Fiat</option>
+								    <option value="audi">Audi</option>
+								</select>
+							</div><br>
+		                    
+		                    
+		                    
+		                    <div class="input_container">
+		                   <label for="role"><b>Would you recommend freecodecamp to a friend?</b><br></label>
+		                      <input type="radio" id="male" name="gender" value="male">
+		                      <label for="male">Definitely</label><br>
+		                      <input type="radio" id="female" name="gender" value="female">
+		                      <label for="female">Maybe</label><br>
+		                      <input type="radio" id="other" name="gender" value="other">
+		                      <label for="other">Not sure</label> 
+		                    
+		                    <div class="input_container">
+		                    <br><label for="role"><b>What is your favourite feature of freeCodeCamp?</b><br></label>
+		                        <select id="wgtmsr" name="wgtmsr" >
+								  <option default>Select an option</option>
+								    <option value="volvo">Volvo</option>
+								    <option value="saab">Saab</option>
+								    <option value="fiat">Fiat</option>
+								    <option value="audi">Audi</option>
+								  </select>
+		                    </div>
+		                    
+		                    <div class="input_container">
+		                    <br><label for="role"><b>What would you like to see improved?</b> <h5>(Check all that apply)</h5></label>
+		                        
+		                        <input type="checkbox" id="Front-end projects" name="vehicle1" value="Bike">
+		                          <label for="vehicle1"> Front-end projects</label><br>
+		
+		                          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		                          <label for="vehicle2">  Back-end projects</label><br>
+		
+		                          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		                          <label for="vehicle3"> Data Visualization</label><br>
+		
+		                          <input type="checkbox" id="Front-end projects" name="vehicle1" value="Bike">
+		                          <label for="vehicle1"> Challenges</label><br>
+		
+		                          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		                          <label for="vehicle2">  Open Source Community</label><br>
+		
+		                          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		                          <label for="vehicle3"> Gitter help rooms</label><br>
+		
+		                          <input type="checkbox" id="Front-end projects" name="vehicle1" value="Bike">
+		                          <label for="vehicle1"> Videos</label><br>
+		
+		                          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		                          <label for="vehicle2">City meetups</label><br>
+		
+		                          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		                          <label for="vehicle3">Wiki</label><br>
+		
+		                          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		                          <label for="vehicle3">Forum</label><br>
+		
+		                          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		                          <label for="vehicle3">Additional Courses</label><br><br>
+		
+		
+		
+		
+		  
+		                    <div class="input_container">
+		                    <label for="role"><b>Any comments or suggestions?</b><br></label>
+		                        
+		                    </div><br>
+		                    <textarea  id="w3mission" rows="4" cols="52" placeholder = "Enter your comments here..."></textarea>
+		                    
+		                    <input type="submit" value="Submit">
+		                    </div><br>
+		                    
+		                   
+		                    
+		               
+		                </div>
+		            </div>
+		            
+	</body>
+</html>
